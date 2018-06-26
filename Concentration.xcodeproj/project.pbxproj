@@ -90,6 +90,7 @@
 				E00C0A9520D5CB5F00D1A278 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		E00C0A9520D5CB5F00D1A278 /* Products */ = {
 			isa = PBXGroup;
