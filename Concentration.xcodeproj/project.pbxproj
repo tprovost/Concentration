@@ -83,7 +83,6 @@
 		E00C0A8B20D5CB5E00D1A278 = {
 			isa = PBXGroup;
 			children = (
-				E00C0ACA20DAF8DA00D1A278 /* GameTheme.swift */,
 				E00C0A9620D5CB5F00D1A278 /* Concentration */,
 				E00C0AAB20D5CB7C00D1A278 /* ConcentrationTests */,
 				E00C0AB620D5CB7C00D1A278 /* ConcentrationUITests */,
@@ -108,6 +107,7 @@
 				E00C0AC520D5CD2B00D1A278 /* Supporting Files */,
 				E00C0A9920D5CB5F00D1A278 /* ViewController.swift */,
 				E00C0AC620D7379600D1A278 /* Concentration.swift */,
+				E00C0ACA20DAF8DA00D1A278 /* GameTheme.swift */,
 				E00C0AC820D746E200D1A278 /* Card.swift */,
 				E00C0A9B20D5CB5F00D1A278 /* Main.storyboard */,
 				E00C0AA320D5CB7B00D1A278 /* Info.plist */,
