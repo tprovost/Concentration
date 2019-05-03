@@ -19,7 +19,7 @@ struct gameTheme
     var cardTextColor: UIColor
     var cardBackColor: UIColor
     var cardFrontColor: UIColor
-    var emojiChoices = Array<String>()
+	var emojiChoices : String
     
 }
 
