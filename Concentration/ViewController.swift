@@ -78,7 +78,7 @@ class ViewController: UIViewController {
     
     @IBAction private func touchCard(_ sender: UIButton) {
       
-        if let cardNumber = cardButtons.index(of: sender)
+        if let cardNumber = cardButtons.firstIndex(of: sender)
         {
             game.chooseCard(at: cardNumber)
             updateViewFromModel()
@@ -112,10 +112,10 @@ class ViewController: UIViewController {
             let card = game.cards[index]    // get the model card
             // now set the appearance of the card based on its state
             if card.isFaceUp {
-                button.setTitle(emoji(for: card), for: UIControlState.normal)
+                button.setTitle(emoji(for: card), for: UIControl.State.normal)
                 button.backgroundColor = currentTheme.cardFrontColor
             } else {
-                button.setTitle("", for: UIControlState.normal)
+                button.setTitle("", for: UIControl.State.normal)
                 button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 0) : currentTheme.cardBackColor
             }
         }

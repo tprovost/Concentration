@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Concentration {
+struct Concentration {
     
     private(set) var cards = [Card]()
     private(set) var flipCount = 0
@@ -18,21 +18,7 @@ class Concentration {
 			   // then that uses the extension to return the one found (or nil)
 			
 			return cards.indices.filter { cards[$0].isFaceUp }.oneAndOnly // use extension instead of checking as below
-			
-//			return faceUpCardIndices.count == 1 ? faceUpCardIndices.first : nil
-			
-//			var foundIndex: Int?
-//			for index in cards.indices {
-//				if cards[index].isFaceUp {
-//					if foundIndex == nil {
-//						foundIndex = index
-//					} else {
-//						return nil  // more than 1 card face up
-//					}
-//				}
-//			}
-//			return foundIndex  // either found the one or returns initial value of nil
-		}
+			}
 		
 		set { // input value defaults to param call newValue
 			for index in cards.indices	{
@@ -46,7 +32,7 @@ class Concentration {
 	
 	// TODO: simplify this logic to only set hasbeenseen once and also not set faceup as computed var should do this for us
 	
-	func chooseCard( at index: Int) {
+	mutating func chooseCard( at index: Int) {
 		// insure (assert) index is properly in range
 		assert(cards.indices.contains(index), "Concentration.chooseCard (at:\(index)): value not in range")
 		
@@ -62,7 +48,7 @@ class Concentration {
                     gameScore += 2
                 } else {
                 // check to see if we have chosen (seen) this card before.  If so,
-                // we penalize the score becasue we chose it but did not match
+                // we penalize the score because we chose it but did not match
                     if cards[index].hasBeenSeen {
                         gameScore -= 1
                     }

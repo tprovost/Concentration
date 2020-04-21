@@ -11,16 +11,20 @@ import UIKit
 
 struct Card : Hashable
 {
-	var hashValue : Int { return identifier }
+	// var hashValue : Int { return identifier }
 	
 	static func ==(lhs:Card, rhs:Card) -> Bool {
 		return lhs.identifier == rhs.identifier
-	}
+		}
+	
+	func hash(into hasher: inout Hasher) {
+		hasher.combine(identifier)
+		}
 	
     var isFaceUp = false
     var isMatched = false
     var hasBeenSeen = false
-    private var identifier: Int
+	private var identifier: Int
     
     private static var identifierFactory = 0
     
