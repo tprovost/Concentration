@@ -66,9 +66,17 @@ class ViewController: UIViewController {
     
     @IBOutlet private var cardButtons: [UIButton]!
     
-    @IBOutlet private weak var flipCountlabel: UILabel!
+	@IBOutlet private weak var flipCountlabel: UILabel! {
+		didSet {
+			updateFlipCountLabel()
+		}
+	}
     
-    @IBOutlet private weak var gameScoreLabel: UILabel!
+	@IBOutlet private weak var gameScoreLabel: UILabel! {
+		didSet {
+			updateGameScoreLabel()
+		}
+	}
     
     override func viewDidLoad() {
         // set the background color for this view
@@ -88,7 +96,9 @@ class ViewController: UIViewController {
         }
         
     }
-    
+	private var attributes: [NSAttributedString.Key : Any]?
+	
+	
     @IBAction private func newGameButton(_ sender: UIButton) {
         // Instantiate a new game
         game = Concentration(NumberOfPairsOfCards: numberOfPairsOfCards)
@@ -99,12 +109,17 @@ class ViewController: UIViewController {
         emoji.removeAll()
         // set new background color and font colors
         self.view.backgroundColor = currentTheme.backgroundViewColor
-        flipCountlabel.textColor = currentTheme.cardBackColor
-        gameScoreLabel.textColor = currentTheme.cardBackColor
-        
+		
+		// set Score and Flip Count label attributes
+		
+		attributes = [
+						.strokeWidth : -3.0,
+						.strokeColor : currentTheme.cardBackColor
+					 ]
+		 
         updateViewFromModel()
     }
-    
+	
     private func updateViewFromModel() {
         // check through each card to determine how to display
         for index in cardButtons.indices {
@@ -120,12 +135,21 @@ class ViewController: UIViewController {
             }
         }
         // update the flip count and score
-        flipCountlabel.text = "Flips: \(game.flipCount)"
-        gameScoreLabel.text = "Score: \(game.gameScore)"
+		updateFlipCountLabel()
+		updateGameScoreLabel()
+		
+		//flipCountlabel.attributedText = NSAttributedString(string:"Flips: \(game.flipCount)", attributes:attributes)
+		// gameScoreLabel.attributedText = NSAttributedString(string: "Score: \(game.gameScore)", attributes: attributes)
     }
     
-    // var emojiChoices = ["👻","🎃","🍎","👿","👹","😸","🍬","🍭","💀","🐸","🐶","🦇"]
-    
+	private func updateFlipCountLabel() {
+		flipCountlabel.attributedText = NSAttributedString(string:"Flips: \(game.flipCount)", attributes:attributes)
+	}
+	
+	private func updateGameScoreLabel() {
+		gameScoreLabel.attributedText = NSAttributedString(string: "Score: \(game.gameScore)", attributes: attributes)
+	}
+	
     private var emoji = [Card:String]()
     
     private func emoji(for card: Card) -> String {
