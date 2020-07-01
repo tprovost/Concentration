@@ -17,6 +17,7 @@
 		E00C0AC720D7379600D1A278 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00C0AC620D7379600D1A278 /* Concentration.swift */; };
 		E00C0AC920D746E200D1A278 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00C0AC820D746E200D1A278 /* Card.swift */; };
 		E00C0ACB20DAF8DB00D1A278 /* GameTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00C0ACA20DAF8DA00D1A278 /* GameTheme.swift */; };
+		E01F6EB524AAA2860005FB83 /* ConcentrationThemeChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01F6EB424AAA2860005FB83 /* ConcentrationThemeChooserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E00C0AC620D7379600D1A278 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		E00C0AC820D746E200D1A278 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		E00C0ACA20DAF8DA00D1A278 /* GameTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTheme.swift; sourceTree = "<group>"; };
+		E01F6EB424AAA2860005FB83 /* ConcentrationThemeChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationThemeChooserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				E00C0ACA20DAF8DA00D1A278 /* GameTheme.swift */,
 				E00C0AC820D746E200D1A278 /* Card.swift */,
 				E00C0A9B20D5CB5F00D1A278 /* Main.storyboard */,
+				E01F6EB424AAA2860005FB83 /* ConcentrationThemeChooserViewController.swift */,
 				E00C0AA320D5CB7B00D1A278 /* Info.plist */,
 			);
 			path = Concentration;
@@ -281,6 +284,7 @@
 				E00C0ACB20DAF8DB00D1A278 /* GameTheme.swift in Sources */,
 				E00C0A9820D5CB5F00D1A278 /* AppDelegate.swift in Sources */,
 				E00C0AC720D7379600D1A278 /* Concentration.swift in Sources */,
+				E01F6EB524AAA2860005FB83 /* ConcentrationThemeChooserViewController.swift in Sources */,
 				E00C0AC920D746E200D1A278 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
