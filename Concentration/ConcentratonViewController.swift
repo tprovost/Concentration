@@ -78,7 +78,7 @@ class ConcentratonViewController: UIViewController {
 		// TODO:  Go back to Theme chooser screen to get the theme for the new game
 		
 		navigationController?.popViewController(animated: true)
-		splitViewController?.viewControllers[1].removeFromParent()
+//		splitViewController?.viewControllers[1].removeFromParent()
 		
 		// get new theme
         currentTheme = nil
