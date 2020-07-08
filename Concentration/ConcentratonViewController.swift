@@ -137,16 +137,16 @@ class ConcentratonViewController: UIViewController {
 
 // extend Int to provide a random number between 0..theIntvalue-1.  Simplifies use in picking emojis in our application
 
-extension Int {
-	var arc4random : Int {
-		if self > 0 {
-			return Int(arc4random_uniform(UInt32(self)))
-		} else if self < 0 {
-			return -Int(arc4random_uniform(UInt32(abs(self))))
-		} else {
-			return 0
-		}
-	}
-}
+//extension Int {
+//	var arc4random : Int {
+//		if self > 0 {
+//			return Int(arc4random_uniform(UInt32(self)))
+//		} else if self < 0 {
+//			return -Int(arc4random_uniform(UInt32(abs(self))))
+//		} else {
+//			return 0
+//		}
+//	}
+//}
 
 

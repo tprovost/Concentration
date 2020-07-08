@@ -15,8 +15,17 @@
 		E00C0AAD20D5CB7C00D1A278 /* ConcentrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00C0AAC20D5CB7C00D1A278 /* ConcentrationTests.swift */; };
 		E00C0AB820D5CB7C00D1A278 /* ConcentrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00C0AB720D5CB7C00D1A278 /* ConcentrationUITests.swift */; };
 		E00C0AC720D7379600D1A278 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00C0AC620D7379600D1A278 /* Concentration.swift */; };
-		E00C0AC920D746E200D1A278 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00C0AC820D746E200D1A278 /* Card.swift */; };
 		E00C0ACB20DAF8DB00D1A278 /* GameTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00C0ACA20DAF8DA00D1A278 /* GameTheme.swift */; };
+		E046CA7124B5F7F40079BAAC /* SetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E046CA6D24B5F7F40079BAAC /* SetCardView.swift */; };
+		E046CA7224B5F7F40079BAAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E046CA6E24B5F7F40079BAAC /* ViewController.swift */; };
+		E046CA7324B5F7F40079BAAC /* SymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E046CA6F24B5F7F40079BAAC /* SymbolView.swift */; };
+		E046CA7424B5F7F40079BAAC /* CardTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E046CA7024B5F7F40079BAAC /* CardTableView.swift */; };
+		E046CA7724B5F8190079BAAC /* SetCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E046CA7524B5F8190079BAAC /* SetCardDeck.swift */; };
+		E046CA7824B5F8190079BAAC /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = E046CA7624B5F8190079BAAC /* Set.swift */; };
+		E046CA7A24B5F97B0079BAAC /* SetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E046CA7924B5F97B0079BAAC /* SetCard.swift */; };
+		E046CA7C24B5FA7C0079BAAC /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E046CA7B24B5FA7C0079BAAC /* Grid.swift */; };
+		E046CA7E24B5FDE90079BAAC /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E046CA7D24B5FDE90079BAAC /* Card.swift */; };
+		E046CA8224B60B790079BAAC /* CardBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = E046CA8124B60B790079BAAC /* CardBehavior.swift */; };
 		E06896A224B2B8C500070364 /* ThemeChooseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06896A124B2B8C500070364 /* ThemeChooseController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +61,17 @@
 		E00C0AB720D5CB7C00D1A278 /* ConcentrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationUITests.swift; sourceTree = "<group>"; };
 		E00C0AB920D5CB7C00D1A278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E00C0AC620D7379600D1A278 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
-		E00C0AC820D746E200D1A278 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		E00C0ACA20DAF8DA00D1A278 /* GameTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTheme.swift; sourceTree = "<group>"; };
+		E046CA6D24B5F7F40079BAAC /* SetCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetCardView.swift; path = ../../GraphicSET/GraphicSET/SetCardView.swift; sourceTree = "<group>"; };
+		E046CA6E24B5F7F40079BAAC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../GraphicSET/GraphicSET/ViewController.swift; sourceTree = "<group>"; };
+		E046CA6F24B5F7F40079BAAC /* SymbolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SymbolView.swift; path = ../../GraphicSET/GraphicSET/SymbolView.swift; sourceTree = "<group>"; };
+		E046CA7024B5F7F40079BAAC /* CardTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardTableView.swift; path = ../../GraphicSET/GraphicSET/CardTableView.swift; sourceTree = "<group>"; };
+		E046CA7524B5F8190079BAAC /* SetCardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetCardDeck.swift; path = ../../SET/SET/SetCardDeck.swift; sourceTree = "<group>"; };
+		E046CA7624B5F8190079BAAC /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Set.swift; path = ../../SET/SET/Set.swift; sourceTree = "<group>"; };
+		E046CA7924B5F97B0079BAAC /* SetCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetCard.swift; path = ../../SET/SET/SetCard.swift; sourceTree = "<group>"; };
+		E046CA7B24B5FA7C0079BAAC /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = "../../../Google Drive/Development/Grid.swift"; sourceTree = "<group>"; };
+		E046CA7D24B5FDE90079BAAC /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		E046CA8124B60B790079BAAC /* CardBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardBehavior.swift; path = "../../../Google Drive/Development/PlayingCard L8/PlayingCard/CardBehavior.swift"; sourceTree = "<group>"; };
 		E06896A124B2B8C500070364 /* ThemeChooseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChooseController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				E00C0A9620D5CB5F00D1A278 /* Concentration */,
+				E00C0AC520D5CD2B00D1A278 /* Supporting Files */,
 				E00C0AAB20D5CB7C00D1A278 /* ConcentrationTests */,
 				E00C0AB620D5CB7C00D1A278 /* ConcentrationUITests */,
 				E00C0A9520D5CB5F00D1A278 /* Products */,
@@ -106,12 +125,20 @@
 		E00C0A9620D5CB5F00D1A278 /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
-				E00C0AC520D5CD2B00D1A278 /* Supporting Files */,
 				E00C0A9920D5CB5F00D1A278 /* ConcentratonViewController.swift */,
 				E00C0AC620D7379600D1A278 /* Concentration.swift */,
 				E00C0ACA20DAF8DA00D1A278 /* GameTheme.swift */,
-				E00C0AC820D746E200D1A278 /* Card.swift */,
 				E00C0A9B20D5CB5F00D1A278 /* Main.storyboard */,
+				E046CA7624B5F8190079BAAC /* Set.swift */,
+				E046CA7524B5F8190079BAAC /* SetCardDeck.swift */,
+				E046CA7024B5F7F40079BAAC /* CardTableView.swift */,
+				E046CA6D24B5F7F40079BAAC /* SetCardView.swift */,
+				E046CA8124B60B790079BAAC /* CardBehavior.swift */,
+				E046CA7924B5F97B0079BAAC /* SetCard.swift */,
+				E046CA7D24B5FDE90079BAAC /* Card.swift */,
+				E046CA7B24B5FA7C0079BAAC /* Grid.swift */,
+				E046CA6F24B5F7F40079BAAC /* SymbolView.swift */,
+				E046CA6E24B5F7F40079BAAC /* ViewController.swift */,
 				E06896A124B2B8C500070364 /* ThemeChooseController.swift */,
 				E00C0AA320D5CB7B00D1A278 /* Info.plist */,
 			);
@@ -282,10 +309,19 @@
 			files = (
 				E00C0A9A20D5CB5F00D1A278 /* ConcentratonViewController.swift in Sources */,
 				E00C0ACB20DAF8DB00D1A278 /* GameTheme.swift in Sources */,
+				E046CA7124B5F7F40079BAAC /* SetCardView.swift in Sources */,
+				E046CA7324B5F7F40079BAAC /* SymbolView.swift in Sources */,
 				E00C0A9820D5CB5F00D1A278 /* AppDelegate.swift in Sources */,
 				E00C0AC720D7379600D1A278 /* Concentration.swift in Sources */,
+				E046CA7A24B5F97B0079BAAC /* SetCard.swift in Sources */,
+				E046CA7C24B5FA7C0079BAAC /* Grid.swift in Sources */,
+				E046CA8224B60B790079BAAC /* CardBehavior.swift in Sources */,
 				E06896A224B2B8C500070364 /* ThemeChooseController.swift in Sources */,
-				E00C0AC920D746E200D1A278 /* Card.swift in Sources */,
+				E046CA7E24B5FDE90079BAAC /* Card.swift in Sources */,
+				E046CA7424B5F7F40079BAAC /* CardTableView.swift in Sources */,
+				E046CA7824B5F8190079BAAC /* Set.swift in Sources */,
+				E046CA7224B5F7F40079BAAC /* ViewController.swift in Sources */,
+				E046CA7724B5F8190079BAAC /* SetCardDeck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
